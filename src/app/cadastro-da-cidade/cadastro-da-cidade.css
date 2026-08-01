@@ -87,7 +87,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--branca);
+    color: #ffffff;
     font-weight: bold;
     border-radius: 8px;
 }
