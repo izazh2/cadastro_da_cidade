@@ -1,1 +1,28 @@
-<p>cadastro-da-cidade works!</p>
+<div id="div-form">
+    <h2>Sistema de Cadastro da Cidade e Eleitoral</h2>
+
+    <form id="formulario">
+
+        <label for="cidade">Nome da cidade</label>
+        <input type="text" name="cidade" id="cidade" [(ngModel)]="nome_cidade">
+
+        <label for="eleitores">Número de eleitores</label>
+        <input type="number" name="eleitores" id="eleitores" [(ngModel)]="numero_eleitores" >
+
+        <div id="div-btns">
+            <button type="button" id="btnAdd" (click)="addCidade()">Adicionar</button>
+            <button type="button" id="btnLimpar" (click)="limpaTudo()">Limpar</button>
+        </div>
+    </form>
+    
+    <div id="div-lista">
+        @for(elem of listaCidades; track elem.idCidade){
+            <div id="div-item">
+                <input type="checkbox">&nbsp; {{elem.idCidade}} - {{elem.nomeCidade}} - {{elem.numeroEleitores}} eleitores
+            </div>
+        }@empty{
+            <div class="div-item">Nenhum item adicionado</div>
+        }
+
+    </div>
+</div>
