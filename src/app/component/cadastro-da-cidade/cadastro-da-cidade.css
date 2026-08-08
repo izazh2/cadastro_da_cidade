@@ -1,0 +1,59 @@
+#div-form{
+    width: 1000px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+label{
+    display: block;
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+input, select{
+    height: 40px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.elem-form-01{
+    width: 800px;
+}
+
+.elem-form-02{
+    width: 450px;
+}
+
+#div-btns{
+    width: 1000px;
+    height: 80px;
+    margin: 40px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 210px;
+    height: 45px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    color: var(--bramca);
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+button{
+    opacity: 0.8;
+}
+
+#btnSalvar{
+    margin-right: 15px;
+    background-color: var(--botao01);
+}
+
+#btnLimpar{
+    margin-left: 15px;
+    background-color:  var(--botao02);
+}

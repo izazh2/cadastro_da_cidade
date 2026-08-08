@@ -14,15 +14,5 @@
             <button type="button" id="btnLimpar" (click)="limpaTudo()">Limpar</button>
         </div>
     </form>
-    
-    <div id="div-lista">
-        @for(elem of listaCidades; track elem.idCidade){
-            <div id="div-item">
-                <input type="checkbox">&nbsp; {{elem.idCidade}} - {{elem.nomeCidade}} - {{elem.numeroEleitores}} eleitores
-            </div>
-        }@empty{
-            <div class="div-item">Nenhum item adicionado</div>
-        }
 
-    </div>
 </div>

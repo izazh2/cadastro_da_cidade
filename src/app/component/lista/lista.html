@@ -1,0 +1,22 @@
+<div id="div-lista">
+    <h3>Cidades Cadatradas</h3>
+
+    <div id="div-lista-cidade">
+        @for(elem of listaCidades(); track elem.idCidade){
+                <div class="div-item-cidade">
+                        <span class="item-cidade">
+                                {{elem.idCidade}} - {{elem.nomeCidade}} - {{elem.numeroEleitores}} 
+                        </span>
+
+                        <span class="btns-lista">
+                                <a class="lnk-editar" (click)="editar(elem)">Editar</a>
+                                <a class="lnk-excluir" (click)="excluir(elem)">Excluir</a>
+                        </span>
+                </div>
+        }@empty{
+                <div class="div-item-cidade">
+                        NENHUM RESGISTRO NA LISTA
+                </div>
+        }
+    </div>
+</div>
